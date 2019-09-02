@@ -1,0 +1,227 @@
+body{
+	margin: 0;
+	padding:0;
+	}
+/*Bounce animation*/
+.bouncein{
+	        margin-left: 360px;
+}
+.bouncein h2{
+	float: left;
+	margin-left: 30px;
+	text-align: center;
+	color:#87e2ff;
+	font-size: 40px;
+	animation:bouncein 1.3s ease-in-out forwards;
+}
+@keyframes bouncein {
+	0% {
+		transform: scale(0);
+	}	
+	50% {
+		transform: scale(1.2);
+	}	
+	100% { transform: scale(1); }
+}
+===================================
+/*Animation play state*/
+
+.heart{
+	    margin-left: 470px;
+}
+.heart .fas{
+	margin-top: 20px;
+	margin-left: 245px;
+	font-size: 100px;
+	color: pink;
+	animation:heartt 3s ease infinite;
+}
+@keyframes heartt{
+	0%{
+		transform: scale(1.3);
+	}
+	20%{
+		transform: scale(1.6);
+	}
+	27%{
+		transform:scale(1.3);
+	}
+	35%{
+		transform:scale(1.6);
+	}
+	40%{
+		transform:scale(1.3);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	60%{
+		transform: scale(1.6);
+	}
+	67%{
+		transform:scale(1.3);
+	}
+	75%{
+		transform:scale(1.6);
+	}
+	80%{
+		transform:scale(1.3);
+	}
+	100%{
+		transform:scale(1.3);
+	}
+
+}
+		
+=================================
+/*Animation play state*/
+#clockk{
+ float: right;
+
+}
+.clock{
+	 position: absolute;
+    top: 224px;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+.clock hr{
+	    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 40%;
+    height: 6px;
+    background: #262626;
+    border-radius: 3px;
+    animation: animate 6s linear infinite;
+    transform-origin: left;
+
+}
+.clock:hover hr{
+	animation-play-state: paused;
+}
+@keyframes animate{
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+======================
+/*Fill-mode*/
+.forward{
+
+}
+.forward p:first-of-type{
+	background-color:lightblue;
+	border-radius: 10px;
+	width: 20%;
+	padding: 25px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 330px;
+}
+.forward p:last-of-type{
+	background-color:red;
+	border-radius: 10px;
+	width: 20%;
+	padding: 25px;
+	font-size: 20px;
+	text-align: center;
+	margin-left:330px;
+}
+.forward h5{
+	font-size: 20px;
+	color:lightgray;
+	margin-left:450px;
+	
+}
+
+.forward:hover p:first-of-type{
+	animation: forword 1.2s ease-in-out forwards;
+}
+.forward:hover p:last-of-type{
+	animation: forword 1.2s ease-in-out;
+}
+@keyframes forword{
+	100%{
+		transform: scale(1.3);
+	}
+}
+=========================
+/* Animation time function*/
+.balls{
+display: inline-block; 
+
+}
+.balls .fas{
+font-size: 30px;
+margin-left: 15px;
+}
+.first{
+	top:-600px;
+  color: red;
+   position: relative;
+  animation-name: redd;
+  animation: redd 2s ease-in-out infinite 0.15s;
+
+}
+.second
+{
+	color:lightblue;
+	top:-600px;
+   position: relative;
+ animation-name: redd;
+  animation: redd 2s ease-in-out infinite 0.05s;
+}
+.third{
+	color: lightgreen;
+	top:-600px;
+   position: relative;
+  animation-name: redd;
+    animation: redd 2s ease-in-out infinite 0.10s;
+}
+.forth{
+	color: yellow;
+	top:-600px;
+   position: relative;
+  animation-name: redd;
+  animation: redd 2s ease-in-out infinite 0.20s;
+}
+.fifth{
+	color:lightpink;
+	top:-600px;
+	    position: relative;
+  animation-name: redd;
+  animation: redd 2s ease-in-out infinite 0.15s;
+}
+.sixth{
+	color: blue;
+	top:-600px;
+   position: relative;
+  animation-name: redd;
+  animation: redd 2s ease-in-out infinite 0.05s;
+}
+@keyframes redd{
+	0%{
+		top:-600px;
+	}
+	25%{
+		top:-275px;
+	}
+	50%{
+		top: -290px;
+	}
+	60%{
+		top: -300px;
+	}
+	80%{
+		top:-270px;
+	}
+	100%{
+		top: -600px;
+	}
+}
+
